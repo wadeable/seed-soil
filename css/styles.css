@@ -1,0 +1,237 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #FCF8E8;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  grid-area: main;
+}
+
+header {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 4rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-nav{
+  font-family: 'Ibarra Real Nova', serif;
+  position: relative;
+  z-index: 1;
+  font-weight: 100;
+  font-size: 1.2rem;
+  margin-right: 2rem;
+}
+
+.main-nav a {
+  padding: 0 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: url("../images/IMG_6523.JPG") center/cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+
+.logo {
+  font-family: 'Amatic SC', cursive;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 1.5rem;
+  width: 100px;
+  height: 100px;
+  text-align: left;
+  margin: 1rem;
+  background: black;
+  border-radius: 50%;
+  opacity: 50%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transform: scale(1);
+  transition: transform 200ms ease-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  transition: transform 200ms ease-out;
+}
+
+.hero-arrow {
+  display: flex;
+  position: relative;
+  left: 50%;
+  top: 45%;
+  flex-direction: row;
+  align-self: center;
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+p {
+  font-family: "Ibarra Real Nova", serif;
+  text-align: center;
+  color: black;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  margin-bottom: 3rem;
+  width: 7rem;
+  border-top: 1px solid gray;
+  border-bottom: none;
+  border-radius: 1px;
+  display: flex;
+}
+
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 2rem 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.emi-profile {
+  display: flex;
+  flex-wrap:wrap;
+  object-fit: cover;
+  width: 25%;
+  border-radius: 10px;
+}
+
+.about-text {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  padding: 2rem;
+  text-align: left;
+}
+
+#gallery {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.galleries {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+  width: 100vw;
+}
+
+.gallery-column {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+.gallery-column img {
+  margin: 10px;
+  border-radius: 10px;
+  transform: scale(1);
+  transition: transform 200ms ease-out;
+}
+
+.gallery-column img:hover,
+.gallery-column img:active {
+  transform: scale(1.03);
+  transition: transform 200ms ease-out;
+  z-index: 1;
+}
+
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+#contact hr {
+  margin-bottom: 10px;
+}
+
+.email {
+  width: 100%;
+}
+
+.ig-handle {
+  text-decoration: none;
+  color: black;
+  padding-left: .5rem;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.copyright {
+  margin-top: 0;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.02);
+  }
+}
